@@ -17,7 +17,7 @@ trait TranslatableTabToRowTrait
      * @param NovaRequest $request
      * @return FieldCollection|Collection
      */
-    public function availableFields(NovaRequest $request)
+    public function availableFields(NovaRequest $request) : FieldCollection
     {
         $method = $this->fieldsMethod($request);
 
